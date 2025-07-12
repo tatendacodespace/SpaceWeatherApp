@@ -1,3 +1,0 @@
-# Minimalist Space Weather App
-
-
