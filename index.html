@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimalist Space Weather App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Minimalist Space Weather</h1>
+    <button id="theme-toggle" aria-label="Toggle theme">🪐</button>
+  </header>
+  <main>
+    <section class="weather-cards">
+      <div class="card" id="moon-phase-card">
+        <h2>Moon Phase</h2>
+        <div class="moon-icon" id="moon-icon"></div>
+        <p id="moon-phase">Loading...</p>
+      </div>
+      <div class="card" id="solar-activity-card">
+        <h2>Solar Activity</h2>
+        <p id="solar-activity">Loading...</p>
+      </div>
+      <div class="card" id="geomagnetic-card">
+        <h2>Geomagnetic Storm</h2>
+        <p id="kp-index">Loading...</p>
+      </div>
+    </section>
+    <section class="time-quote">
+      <div class="time" id="live-time">--:--:--</div>
+      <blockquote id="quote">Loading quote...</blockquote>
+    </section>
+  </main>
+  <footer>
+    <small>Data from NASA, NOAA, and WeatherAPI</small>
+    <audio id="ambient-audio" src="assets/space-ambient.mp3" loop></audio>
+    <button id="audio-toggle" aria-label="Toggle ambient sound">🔊</button>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
